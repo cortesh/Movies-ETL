@@ -47,19 +47,19 @@ Extract and transform the Kaggle metadata and MovieLens rating data, then conver
 ## Deliverable 3 Requirements
 complete all requirements below:
 
-The extraction and transformation of the Kaggle metadata using the ETL function does the following:
-The Kaggle metadata is cleaned. (4 pt)
-The Wikipedia and Kaggle DataFrames are merged. (3 pt)
-The following is performed on the merged Wikipedia and Kaggle DataFrames to create the movies_df: (8 pt)
-Unnecessary columns are dropped.
-A function is used to fill in the missing Kaggle data.
-The movies_df DataFrame is filtered to keep specific columns.
-The movies_df DataFrame columns are renamed.
-The extraction and transformation of the MovieLens ratings data using the ETL function does the following:
-The ratings counts are cleaned. (3 pt)
-The movies_df DataFrame is merged with the cleaned ratings DataFrame to create the movies_with_ratings_df DataFrame. (4 pt)
-The empty values in the movies_with_ratings_df DataFrame are filled with “0”. (3 pt)
-The movies_with_ratings_df and the movies_df DataFrames are displayed in the ETL_clean_kaggle_data.ipynb file. (5 pt)
+1. The Kaggle metadata is cleaned. (4 pt)
+2. The Wikipedia and Kaggle DataFrames are merged. (3 pt)
+3. The following is performed on the merged Wikipedia and Kaggle DataFrames to create the movies_df: (8 pt)
+4. Unnecessary columns are dropped.
+5. A function is used to fill in the missing Kaggle data.
+6. The movies_df DataFrame is filtered to keep specific columns.
+7. The movies_df DataFrame columns are renamed.
+8. The extraction and transformation of the MovieLens ratings data using the ETL function does the following:
+9. The ratings counts are cleaned. (3 pt)
+10. The movies_df DataFrame is merged with the cleaned ratings DataFrame to create the movies_with_ratings_df DataFrame. (4 pt)
+11. The empty values in the movies_with_ratings_df DataFrame are filled with “0”. (3 pt)
+12. The movies_with_ratings_df and the movies_df DataFrames are displayed in the ETL_clean_kaggle_data.ipynb file. (5 pt)
+
 
 ## Deliverable 4: Create the Movie Database (15 points)
 Add the movies_df DataFrame and MovieLens rating CSV data to a SQL database.
