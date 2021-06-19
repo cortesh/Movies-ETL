@@ -26,20 +26,19 @@ Extract and transform the Wikipedia data to merge it with the Kaggle metadata. W
 ## Deliverable 2 Requirements
 Complete all requirements below:
 
-The TV shows are filtered out, and the wiki_movies_df DataFrame is created. (3 pt)
-A try-except block is used to catch errors while extracting the IMDb IDs with a regular expression and dropping duplicate IDs. (5 pt)
-The extraction and transformation of the Wikipedia data in the ETL function does the following:
-A list comprehension is used to keep columns with non-null values. (3 pt)
-The non-null box office data is converted to string values using the lambda and join functions. (3 pt)
-A regular expression is used to match the six elements of "form_one" of the box office data. (2 pt)
-A regular expression is used to match the three elements of "form_two" of the box office data. (2 pt)
-The following columns are cleaned in the Wikipedia DataFrame: (8 pt)
-* The box office column
-* The budget column
-* The release date column
-* The running time column
-
-​The cleaned Wikipedia data is converted to a Pandas DataFrame, and the DataFrame is displayed in the ETL_clean_wiki_movies.ipynb file. (4 pt)
+1. The TV shows are filtered out, and the wiki_movies_df DataFrame is created. (3 pt)
+2. A try-except block is used to catch errors while extracting the IMDb IDs with a regular expression and dropping duplicate IDs. (5 pt)
+3. The extraction and transformation of the Wikipedia data in the ETL function does the following:
+4. A list comprehension is used to keep columns with non-null values. (3 pt)
+5. The non-null box office data is converted to string values using the lambda and join functions. (3 pt)
+6. A regular expression is used to match the six elements of "form_one" of the box office data. (2 pt)
+7. A regular expression is used to match the three elements of "form_two" of the box office data. (2 pt)
+8. The following columns are cleaned in the Wikipedia DataFrame: (8 pt)
+  * The box office column
+  * The budget column
+  * The release date column
+  * The running time column
+9. The cleaned Wikipedia data is converted to a Pandas DataFrame, and the DataFrame is displayed in the ETL_clean_wiki_movies.ipynb file. (4 pt)
 
 ## Deliverable 3: Extract and Transform the Kaggle Data (30 points)
 Extract and transform the Kaggle metadata and MovieLens rating data, then convert the transformed data into separate DataFrames. Merge the Kaggle metadata DataFrame with the Wikipedia movies DataFrame to create the movies_df DataFrame. Finally, Merge the MovieLens rating data DataFrame with the movies_df DataFrame to create the movies_with_ratings_df.
@@ -67,6 +66,6 @@ Add the movies_df DataFrame and MovieLens rating CSV data to a SQL database.
 ## Deliverable 4 Requirements
 complete all requirements below:
 
-The data from the movies_df DataFrame replaces the current data in the movies table in the SQL database, as determined by the movies_query.png. (5 pt)
-The data from the MovieLens rating CSV file is added to the ratings table in the SQL database, as determined by the ratings_query.png. (5 pt)
-The elapsed time to add the data to the database is displayed in the ETL_create_database.ipynb file. (5 pt)
+1. The data from the movies_df DataFrame replaces the current data in the movies table in the SQL database, as determined by the movies_query.png. (5 pt)
+2. The data from the MovieLens rating CSV file is added to the ratings table in the SQL database, as determined by the ratings_query.png. (5 pt)
+3. The elapsed time to add the data to the database is displayed in the ETL_create_database.ipynb file. (5 pt)
